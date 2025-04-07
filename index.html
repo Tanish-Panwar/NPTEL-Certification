@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>NPTEL Certification</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: white;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, sans-serif;
+    }
+
+    #verifyButton {
+      display: none;
+      background-color: skyblue;
+      color: black;
+      border: none;
+      padding: 15px 30px;
+      font-size: 18px;
+      cursor: pointer;
+      border-radius: 3px;
+    }
+  </style>
+</head>
+<body>
+  <button id="verifyButton">Verify Certificate</button>
+
+  <script>
+    window.onload = function() {
+      setTimeout(function() {
+        document.getElementById("verifyButton").style.display = "block";
+      }, 5000); // 5 second delay
+    };
+  </script>
+</body>
+</html>
